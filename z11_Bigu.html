@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<div style="color:green;font-size:50px;">
+<script language="JavaScript">
+// Filip Bigus 3F 19.10.2025
+// Zadanie 11
+ var D1_big=prompt("Data1=","");
+ var D2_big=prompt("Data2=","");
+ var sekund;
+ var a=parseFloat(D1_big);
+ var b=parseFloat(D2_big);
+ sekund=(a-b)*24*60*60;
+ document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+ </body>
+ </html>
