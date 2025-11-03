@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Użycie funkcji</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:50px;">
+<script language="JavaScript">
+        var a = parseFloat(prompt("a=",""));
+        var b = parseFloat(prompt("b=",""));
 
+        function suma_bigu(a, b) {
+            return a + b;
+        }
+        function odejmowanie_bigu(a, b) {
+            return a - b;
+        }
+        function mnozenie_bigu(a, b) {
+            return a * b;
+        }
+        function od_kwadratu_bigu(a, b) {
+            return (a*a) + " oraz " + (b*b);
+        }
+        function reszta_z_dzielenia_a_przez_b_bigu(a, b) {
+            return a % b;
+        }
+
+        document.write("suma=" + suma_bigu(a, b) + "<br>");
+        document.write("odejmowanie=" + odejmowanie_bigu(a, b) + "<br>");
+        document.write("mnożenie=" + mnozenie_bigu(a, b) + "<br>");
+        document.write("do kwadratu=" + od_kwadratu_bigu(a, b) + "<br>");
+        document.write("reszta z dzielenia a przez b=" + reszta_z_dzielenia_a_przez_b_bigu(a, b) + "<br>");
+    </script>
+</div>
+</body>
+</html>
