@@ -1,8 +1,8 @@
 <html>
 <body>
 <textarea cols="90" rows="24">
-  
 <!DOCYPE html>
+<html>
 <head>
 <TITLE> Bigus </TITLE> 
 <meta charset="utf-8">
@@ -15,9 +15,12 @@ var liczba2=prompt("liczba2=","");
 var x1_big=parsefloat(liczba1);
 var x2_big=parsefloat(liczba2);
 document.write("x1="+x1_big+"&nbsp&nbsp&nbsp&nbsp&nbsp"+"x2="+x2_big+"<br>");
+var y1_big=3*Math.pow(x1_big,5/7);
+document.write("y1="+y1_big.tofixed(2)+"<br>");
 </script>
 </div>
 </body>
+</html>
 </textarea> 
 </body> 
 </html>
