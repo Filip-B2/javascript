@@ -17,6 +17,10 @@ var x2_big=parsefloat(liczba2);
 document.write("x1="+x1_big+"&nbsp&nbsp&nbsp&nbsp&nbsp"+"x2="+x2_big+"<br>");
 var y1_big=3*Math.pow(x1_big,5/7);
 document.write("y1="+y1_big.tofixed(2)+"<br>");
+
+ rad_x1_big=(x1_big*Math.PI)/180;
+ var y2_big=2*Math.cos(rad_x1_big)+3*Math.sin(rad_x1_big);
+  document.write("y2="+y2_big.tofixed(2)+"<br">;
 </script>
 </div>
 </body>
