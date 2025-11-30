@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 20 </title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <h1>Trójkąt - długości boków</h1>
+  <form>
+    Punkt A: x = <input type="text" id="xa_bigus" value="0">
+    y = <input type="text" id="ya_bigus" value="0"><br><br>
+    Punkt B: x = <input type="text" id="xb_bigus" value="0">
+    y = <input type="text" id="yb_bigus" value="0"><br><br>
+    Punkt C: x = <input type="text" id="xc_bigus" value="0">
+    y = <input type="text" id="yc_bigus" value="0"><br><br>
+  </form>
+  <input type="button" value="Oblicz długości boków" onclick="obliczBoki()">
+  <div style="color:blue; font-size:30px;" id="wyniki"></div>
+  <script>
+    function AB_bigu(xa, ya, xb, yb) {
+      return Math.sqrt(Math.pow(xb - xa, 2) + Math.pow(yb - ya, 2));
+    }
+    function BC_bigu(xb, yb, xc, yc) {
+      return Math.sqrt(Math.pow(xc - xb, 2) + Math.pow(yc - yb, 2));
+    }
+    function AC_bigu(xa, ya, xc, yc) {
+      return Math.sqrt(Math.pow(xc - xa, 2) + Math.pow(yc - ya, 2));
+    }
+    function obliczBoki() {
+      var xa_bigus = parseFloat(document.getElementById('xa_bigus').value);
+      var ya_bigus = parseFloat(document.getElementById('ya_bigus').value);
+      var xb_bigus = parseFloat(document.getElementById('xb_bigus').value);
+      var yb_bigus = parseFloat(document.getElementById('yb_bigus').value);
+      var xc_bigus = parseFloat(document.getElementById('xc_bigus').value);
+      var yc_bigus = parseFloat(document.getElementById('yc_bigus').value);
 
+      var ab = AB_bigu(xa_bigus, ya_bigus, xb_bigus, yb_bigus);
+      var bc = BC_bigu(xb_bigus, yb_bigus, xc_bigus, yc_bigus);
+      var ac = AC_bigu(xa_bigus, ya_bigus, xc_bigus, yc_bigus);
+
+      document.getElementById('wyniki').innerHTML =
+        "AB = " + ab.toFixed(2) + " <br>BC = " + bc.toFixed(2) + " <br>AC = " + ac.toFixed(2);
+    }
+  </script>
+</body>
+</html>
