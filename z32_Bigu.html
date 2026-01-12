@@ -1,0 +1,27 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function klient(nazwisko_b,imie_b,zawod_b)//początek konstruktora 
+  { 
+   this.nazwisko=nazwisko_b; 
+   this.imie=imie_b; 
+   this.zawod=zawod_b;   
+  }//koniec konstruktora 
+              klient.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod); 
+      }; 
+  var osoba1 = new klient("Balcerzak", "Filip", "kasjer"); // nowy obiekt osoba1 
+  var osoba2 = new klient('Gorzoch', 'Igor', 'podzielniki'); 
+  osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  osoba2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("klient pierwszy"+"   "+osoba1.nazwisko+"   "+osoba1.imie+"   "+osoba1.zawod); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html> 
