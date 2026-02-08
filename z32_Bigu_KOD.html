@@ -1,32 +1,36 @@
 <html>
 <body>
 <textarea cols="90" rows="24">
-<html> 
-     <head> 
-           <script type="text/javascript"> 
-              function klient(nazwisko_b,imie_b,zawod_b)//początek konstruktora 
-  { 
-   this.nazwisko=nazwisko_b; 
-   this.imie=imie_b; 
-   this.zawod=zawod_b;   
-  }//koniec konstruktora 
-              klient.prototype.wypisz = function () //definicja metody 
-      { 
-         alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod); 
-      }; 
-  var osoba1 = new klient("Balcerzak", "Filip", "kasjer"); // nowy obiekt osoba1 
-  var osoba2 = new klient('Gorzoch', 'Igor', 'podzielniki'); 
-  osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
-  osoba2.wypisz(); 
-                document.write("dostęp do właściwości"+"<br>"); 
-// poniżej dostęp do pól osoby1 
-     document.write("klient pierwszy"+"   "+osoba1.nazwisko+"   "+osoba1.imie+"   "+osoba1.zawod); 
-            </script> 
-     </head> 
-<body> 
- <br> 
-   programowanie obiektowe   
-</body> 
+<html>
+ <head>
+ <script type="text/javascript">
+ function ciezarowka(producent_k, ladownosc_k, model_k, liczba_miejsc_k)
+{
+this.producent=producent_k;
+this.ladownosc=ladownosc_k;
+this.model=model_k;
+this.liczba_miejsc=liczba_miejsc_k;
+}
+ ciezarowka.prototype.wypisz_bigus = function () 
+ {
+ alert(this.producent + ' ' + this.ladownosc+ ' ' + this.model+ ' ' +this.liczba_miejsc);
+ };
+var ciezarowka1 = new ciezarowka("Ford", "2300kg", "transit", "2"); 
+var ciezarowka2 = new ciezarowka('Saurer', '10000kg', '10DM', '2');
+var ciezarowka3 = new ciezarowka('GAZ','2000kg', '66', '2');
+ciezarowka1.wypisz_bigus();
+ciezarowka2.wypisz_bigus();
+ciezarowka3.wypisz_bigus();
+document.write("dostęp do właściwości"+"<br>");
+document.write("ciezarowka pierwsza"+" "+ciezarowka1.producent+" "+ciezarowka1.ladownosc+" "+ciezarowka1.model+" "+ciezarowka1.liczba_miejsc+"<p>");
+document.write("ciezarowka druga"+" "+ciezarowka2.producent+" "+ciezarowka2.ladownosc+" "+ciezarowka2.model+" "+ciezarowka2.liczba_miejsc+"<p>");
+document.write("ciezarowka trzecia"+" "+ciezarowka3.producent+" "+ciezarowka3.ladownosc+" "+ciezarowka3.model+" "+ciezarowka3.liczba_miejsc+"<p>");
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
 </html> 
 </textarea>
 </body>
