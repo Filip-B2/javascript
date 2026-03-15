@@ -1,0 +1,19 @@
+<html>
+<body>
+<title>Bigus</title>
+<p style="color:green;"> MENU </p>
+<p style="color:red;"> 1 = Kolor CZERWONY </p>
+<p style="color:blue;"> 2 = Kolor NIEBIESKI </p>
+</html>
+</body>
+<input type="button" name="bigus" value="Oblicz" onclick="fun_big()" />
+ <script>
+ function fun_big() {
+ var x_big = prompt("Podaj kolor", "");
+ if(x_big == 1 || x_big.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_big == 2 || x_big.toLowerCase() == "niebieski") {
+document.write('<h2 style="color:blue;"> wczytałeś kolor niebieski</h2><br />');
+}
+}
+</script>
