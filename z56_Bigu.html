@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
 
+<script>
+    for (let i_big = 0; i_big <= 39; i_big++) {
+        let w_big = i_big * i_big + i_big + 41;
+
+        document.write("i = " + i_big + "&nbsp;&nbsp;&nbsp; w(" + i_big + ") = " + w_big + "<br>");
+
+        if ((i_big + 1) % 5 == 0) {
+            docalument.write("<br>");
+        }
+    }
+</script>
+
+</body>
+</html>
