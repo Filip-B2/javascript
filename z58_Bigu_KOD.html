@@ -2,6 +2,39 @@
 <body>
 <textarea cols="90" rows="24">
   
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+    let liczba1_big = prompt("Podaj pierwszą liczbę:");
+    let liczba2_big = prompt("Podaj drugą liczbę:");
+
+    liczba1_big = parseInt(liczba1_big);
+    liczba2_big = parseInt(liczba2_big);
+
+    if (liczba1_big == liczba2_big) {
+        confirm("Liczby są równe");
+    } else if (liczba1_big < liczba2_big) {
+        for (let i_big = liczba1_big; i_big <= liczba2_big; i_big++) {
+            if (i_big % 2 == 0) {
+                document.write("<span style='color:green; font-size:30px;'>" + i_big + "</span><br>");
+            }
+        }
+    } else {
+        for (let i_big = liczba1_big; i_big >= liczba2_big; i_big--) {
+            if (i_big % 2 != 0) {
+                document.write("<span style='color:blue; font-size:10px;'>" + i_big + "</span><br>");
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
 </textarea>
 </body>
 </html>  
