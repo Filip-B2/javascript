@@ -1,7 +1,39 @@
 <html>
 <body>
 <textarea cols="90" rows="24">
-  
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+        var a_big = 7;
+        var b_big = 24;
+
+        for (var j_big = 1; j_big <= b_big; j_big++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        for (var i_big = 1; i_big <= a_big - 2; i_big++) {
+            document.write("*");
+
+            for (var j_big = 1; j_big <= b_big - 2; j_big++) {
+                document.write("&nbsp;&nbsp;");
+            }
+
+            document.write("*<br>");
+        }
+
+        for (var j_big = 1; j_big <= b_big; j_big++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
 </textarea>
 </body>
 </html>  
