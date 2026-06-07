@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+        <script language="JavaScript"> //z49
+            do {
+                var a_big=parseFloat(prompt("bok a=",""));
+                var b_big=parseFloat(prompt("bok b=",""));
+                var c_big=parseFloat(prompt("bok c=",""));
+                document.write("sprawdzam waruni dla trójkąta wczytanych danych" + "<br>");
+            } while (!((a_big>0)&&(b_big>0)&&(c_big>0)&&(a_big+b_big>c_big)&&(a_big+c_big>b_big)&&(c_big+b_big>a_big)));
+            document.write("wyrok: trojkat sie zamyka oraz boki sa dodatnie");
+        </script>
+    </div>
+</body>
+</html>
